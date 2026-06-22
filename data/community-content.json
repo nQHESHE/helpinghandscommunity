@@ -1,0 +1,19 @@
+{
+  "updates": [
+    {
+      "title": "Food Relief Drive",
+      "category": "Donations",
+      "text": "Food parcels are being prepared for families who need extra support this month."
+    },
+    {
+      "title": "Volunteer Sign-Ups",
+      "category": "Volunteering",
+      "text": "New volunteers can join outreach, clean-up, and awareness activities."
+    },
+    {
+      "title": "School Support",
+      "category": "Education",
+      "text": "Learning materials are being collected for learners in local communities."
+    }
+  ]
+}

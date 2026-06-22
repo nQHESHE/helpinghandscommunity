@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us - Helping Hands Community</title>
-  <link rel="stylesheet" href="css/style.css"
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+  <script src="javascript/script.js" defer></script>
 </head>
 
 <body>
@@ -27,8 +29,8 @@
 <!-- HERO -->
 <section>
   <img 
-    src="https://images.unsplash.com/photo-1520975922284-9b0e3d0f2b0f?auto=format&fit=crop&w=1200&q=80"
-    alt="Abstract community support illustration"
+    src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=1200&q=80"
+    alt="Community volunteers working together"
     width="100%"
     style="max-height:350px; object-fit:cover;"
   >
@@ -42,7 +44,7 @@
 
   <img 
     src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80"
-    alt="Teamwork and unity concept"
+    alt="People planning community support work"
     width="100%"
     style="max-height:250px; object-fit:cover;"
   >
@@ -60,8 +62,8 @@
   <h2>Our Mission</h2>
 
   <img 
-    src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
-    alt="Growth and progress concept"
+    src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=800&q=80"
+    alt="Volunteers serving food at a community table"
     width="100%"
     style="max-height:250px; object-fit:cover;"
   >
@@ -80,7 +82,7 @@
 
   <img 
     src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=800&q=80"
-    alt="Hope and light concept illustration"
+    alt="Bright light representing hope for the future"
     width="100%"
     style="max-height:250px; object-fit:cover;"
   >
@@ -98,7 +100,7 @@
 
   <img 
     src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
-    alt="Collaboration and teamwork concept"
+    alt="Team members collaborating around a table"
     width="100%"
     style="max-height:250px; object-fit:cover;"
   >
@@ -114,13 +116,37 @@
 
 <hr>
 
+<!-- TABS -->
+<section class="jquery-tabs">
+  <h2>How We Work</h2>
+  <div class="tab-buttons" role="tablist" aria-label="Community work details">
+    <button type="button" class="tab-button active" data-tab="care" role="tab" aria-selected="true">Care</button>
+    <button type="button" class="tab-button" data-tab="education" role="tab" aria-selected="false">Education</button>
+    <button type="button" class="tab-button" data-tab="environment" role="tab" aria-selected="false">Environment</button>
+  </div>
+
+  <div class="tab-panel active" id="care" role="tabpanel">
+    <p>We support families with food relief, essential items, and community outreach.</p>
+  </div>
+
+  <div class="tab-panel" id="education" role="tabpanel">
+    <p>We help learners through school supplies, learning support, and awareness programmes.</p>
+  </div>
+
+  <div class="tab-panel" id="environment" role="tabpanel">
+    <p>We organise clean-up projects that encourage safe and healthy shared spaces.</p>
+  </div>
+</section>
+
+<hr>
+
 <!-- WHAT WE DO -->
 <section>
   <h2>What We Do</h2>
 
   <img 
     src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=800&q=80"
-    alt="Community support concept illustration"
+    alt="Community meal support programme"
     width="100%"
     style="max-height:250px; object-fit:cover;"
   >
@@ -161,8 +187,8 @@
   <h2>Join Our Mission</h2>
 
   <img 
-    src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80"
-    alt="Nature hope inspiration image"
+    src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1200&q=80"
+    alt="Volunteers gathered for community action"
     width="100%"
     style="max-height:300px; object-fit:cover;"
   >
@@ -171,7 +197,7 @@
     Your support helps us continue making a real difference in communities that need it most.
   </p>
 
-  <button>Get Involved</button>
+  <button type="button" data-link="volunteer.html">Get Involved</button>
 </section>
 
 <hr>

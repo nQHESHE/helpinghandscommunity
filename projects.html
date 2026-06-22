@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects - Helping Hands Community</title>
-  <link rel="stylesheet" href="css/style.css"
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+  <script src="javascript/script.js" defer></script>
 </head>
 
 <body>
@@ -33,8 +35,8 @@
   </P>
 
   <img 
-    src="https://images.unsplash.com/photo-1520975922284-9b0e3d0f2b0f?auto=format&fit=crop&w=1200&q=80"
-    alt="Community support illustration"
+    src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=1200&q=80"
+    alt="Volunteers preparing for community support work"
     width="100%"
     style="max-height:350px; object-fit:cover;"
   >
@@ -47,13 +49,27 @@
 
 <hr>
 
+<!-- SORT PROJECTS -->
+<section>
+  <h2>Project Directory</h2>
+  <label for="projectSort">Sort Projects</label>
+  <select id="projectSort">
+    <option value="default">Original order</option>
+    <option value="name">Name A-Z</option>
+    <option value="priority">Highest priority</option>
+  </select>
+  <div id="sortableProjects" class="sort-list"></div>
+</section>
+
+<hr>
+
 <!-- PROJECT 1 -->
 <section>
   <h2>🥫 Food Relief Programme</h2>
 
   <img 
     src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80"
-    alt="Food donation boxes illustration"
+    alt="Fresh food prepared for relief parcels"
     width="100%"
     style="max-height:250px; object-fit:cover;"
   >
@@ -72,7 +88,7 @@
 
   <img 
     src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80"
-    alt="Books and education concept illustration"
+    alt="Classroom education support for learners"
     width="100%"
     style="max-height:250px; object-fit:cover;"
   >
@@ -91,7 +107,7 @@
 
   <img 
     src="https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8?auto=format&fit=crop&w=800&q=80"
-    alt="Environmental clean-up illustration"
+    alt="Community members caring for the local environment"
     width="100%"
     style="max-height:250px; object-fit:cover;"
   >
@@ -109,8 +125,8 @@
   <h2>❤️ Awareness & Outreach Programme</h2>
 
   <img 
-    src="https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=800&q=80"
-    alt="Awareness and support concept illustration"
+    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+    alt="Community outreach team discussing support plans"
     width="100%"
     style="max-height:250px; object-fit:cover;"
   >
@@ -128,7 +144,7 @@
 
   <img 
     src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
-    alt="Growth and development concept illustration"
+    alt="Team planning community development projects"
     width="100%"
     style="max-height:250px; object-fit:cover;"
   >
@@ -146,8 +162,8 @@
   <h2>Want to Support Our Projects?</h2>
 
   <img 
-    src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80"
-    alt="Hope and inspiration background"
+    src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1200&q=80"
+    alt="Volunteers standing together for a community project"
     width="100%"
     style="max-height:300px; object-fit:cover;"
   >
@@ -156,7 +172,7 @@
     Your donation or volunteer work helps us expand these projects and reach more people in need.
   </p>
 
-  <button>Support a Project</button>
+  <button type="button" data-link="donating.html">Support a Project</button>
 </section>
 
 <hr>
